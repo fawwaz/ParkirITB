@@ -1,0 +1,30 @@
+body{
+	text-align: justify;
+}
+
+tr.border_bottom-top th {
+	border: none;
+	vertical-align: top;
+	text-align: left;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	padding: 3px;
+}
+
+tr.border_none td {
+	border: none;
+	padding: 3px;
+	vertical-align: top;
+	text-align: left;
+}
+
+tr.border_top td {
+	border-top: 1px solid black;
+}
+
+.caption_center{
+	text-align:center;
+	margin:5px 0 2px 0;
+	font-weight: bold;
+}
