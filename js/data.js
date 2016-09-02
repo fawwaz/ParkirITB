@@ -168,5 +168,63 @@ var data ={
 		['Motor', 249],
 		['Sepeda', 2]
 		]
+	}],
+	"series_angkatanvsfrekuensi":[{
+		name: 'Kamu kuliah di tingkat ?',
+		colorByPoint: true,
+		data: [{
+			name: 'TPB (Tingkat 1)',
+			y: 115,
+			drilldown: 'TPB (Tingkat 1)'
+		}, {
+			name: 'Tingkat 2',
+			y: 46,
+			drilldown: 'Tingkat 2'
+		}, {
+			name: 'Tingkat 3',
+			y: 47,
+			drilldown: 'Tingkat 3'
+		}, {
+			name: 'Tingkat 4 dan seterusnya',
+			y: 128,
+			drilldown: 'Tingkat 4 dan seterusnya'
+		}]
+	}],
+	"drilldown_angkatanvsfrekuensi": [{
+		name: 'TPB (Tingkat 1)',
+		id: 'TPB (Tingkat 1)',
+		data: [
+		['1-2 hari/minggu ke kampus', 1],
+		['3-4 hari/minggu ke kampus', 8],
+		['5 hari/minggu ke kampus', 66],
+		['6-7 hari/minggu ke kampus', 40]
+		]
+	}, {
+		name: 'Tingkat 2',
+		id: 'Tingkat 2',
+		data: [
+		['1-2 hari/minggu ke kampus', 3],
+		['3-4 hari/minggu ke kampus', 1],
+		['5 hari/minggu ke kampus', 11],
+		['6-7 hari/minggu ke kampus', 31]
+		]
+	}, {
+		name: 'Tingkat 3',
+		id: 'Tingkat 3',
+		data: [
+		['1-2 hari/minggu ke kampus', 1],
+		['3-4 hari/minggu ke kampus', 1],
+		['5 hari/minggu ke kampus', 15],
+		['6-7 hari/minggu ke kampus', 30]
+		]
+	}, {
+		name: 'Tingkat 4 dan seterunya',
+		id: 'Tingkat 4 dan seterunya',
+		data: [
+		['1-2 hari/minggu ke kampus', 18],
+		['3-4 hari/minggu ke kampus', 18],
+		['5 hari/minggu ke kampus', 37],
+		['6-7 hari/minggu ke kampus', 55]
+		]
 	}]
 }

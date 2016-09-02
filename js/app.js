@@ -40,5 +40,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var tinggalvskendaraan = pieChartWithDrill("#tinggalvskendaraan","Hubungan tempat tinggal dan kendaraan yang dibawa",data.series_tinggalvskendaraan,data.drilldown_tinggalvskendaraan);
 
   var setujuvskendaraan = pieChartWithDrill("#setujuvskendaraan","Hubungan setuju/tidak setuju dan kendaraan yang dibawa",data.series_setujuvskendaraan,data.drilldown_setujuvskendaraan);
+  var angkatanvsfrekuensi = pieChartWithDrill("#angkatanvsfrekuensi","Hubungan jumlah frekuensi ke kampus dengan angkatan",data.series_angkatanvsfrekuensi,data.drilldown_angkatanvsfrekuensi);
   // console.log("DOM fully loaded and parsed");
 });
