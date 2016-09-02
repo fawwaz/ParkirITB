@@ -209,3 +209,38 @@ function pieChart(idtag, title, allData) {
   });
   console.log("hooray");
 }
+
+
+function pieChartWithDrill(idtag,title,series,drilldown){
+  $(function () {
+      // Create the chart
+      $(idtag).highcharts({
+        chart: {
+          type: 'pie'
+        },
+        title: {
+          text: title
+        },
+        subtitle: {
+          text: 'Klik diagram untuk melihat distribusi pengguna (visualisasi interaktif).'
+        },
+        plotOptions: {
+          series: {
+            dataLabels: {
+              enabled: true,
+              format: '{point.name}: {point.y:.1f}%'
+            }
+          }
+        },
+
+        tooltip: {
+          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+        series: series,
+        drilldown: {
+          series: drilldown
+        }
+      });
+});
+}

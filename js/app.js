@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var tempatTinggal = pieChart("#tempatTinggal","Dimana kamu tinggal ?",data.tempatTinggal);
   var setujuGak = pieChart("#setujuGak","Apakah kamu setuju ?",data.setujuGak);
   var perilakuParkir = pieChart("#perilakuParkir","Berapa lama kamu parkir ?",data.perilakuParkir);
+  var hargapantas = pieChart("#hargapantas","Berapa harga yang pantas seharsnya ?", data.hargapantas);
 
+
+  var tinggalvskendaraan = pieChartWithDrill("#tinggalvskendaraan","Hubungan tempat tinggal dan kendaraan yang dibawa",data.series_tinggalvskendaraan,data.drilldown_tinggalvskendaraan);
+
+  var setujuvskendaraan = pieChartWithDrill("#setujuvskendaraan","Hubungan setuju/tidak setuju dan kendaraan yang dibawa",data.series_setujuvskendaraan,data.drilldown_setujuvskendaraan);
   // console.log("DOM fully loaded and parsed");
 });
