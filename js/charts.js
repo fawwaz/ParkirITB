@@ -186,7 +186,7 @@ function pieChart(idtag, title, allData) {
       text: title
     },
     tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f} orang</b>'
+      pointFormat: '{series.name}: <b>{point.percentage:.1f} %/b>'
     },
     plotOptions: {
       pie: {
@@ -194,7 +194,7 @@ function pieChart(idtag, title, allData) {
         cursor: 'pointer',
         dataLabels: {
           enabled: true,
-          format: '<b>{point.name}</b>: {point.percentage:.1f} orang',
+          format: '<b>{point.name}</b>: {point.percentage:.1f} %',
           style: {
             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
           }
@@ -228,7 +228,7 @@ function pieChartWithDrill(idtag,title,series,drilldown){
           series: {
             dataLabels: {
               enabled: true,
-              format: '{point.name}: {point.y:.1f} orang'
+              format: '{point.name}: {point.y:.1f} %'
             }
           }
         },
