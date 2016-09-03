@@ -228,7 +228,7 @@ function pieChartWithDrill(idtag,title,series,drilldown){
           series: {
             dataLabels: {
               enabled: true,
-              format: '{point.name}: {point.y:.1f} %'
+              format: '{point.name}: {point.y:.1f} orang'
             }
           }
         },

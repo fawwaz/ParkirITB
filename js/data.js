@@ -218,8 +218,8 @@ var data ={
 		['6-7 hari/minggu ke kampus', 30]
 		]
 	}, {
-		name: 'Tingkat 4 dan seterunya',
-		id: 'Tingkat 4 dan seterunya',
+		name: 'Tingkat 4 dan seterusnya',
+		id: 'Tingkat 4 dan seterusnya',
 		data: [
 		['1-2 hari/minggu ke kampus', 18],
 		['3-4 hari/minggu ke kampus', 18],
